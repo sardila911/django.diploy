@@ -1,0 +1,154 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="/static/images/logo-satret.png">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+<!-- CSS only -->
+
+    <title>S.A.T R.E.T</title>
+</head>
+<link rel="stylesheet" href="proyecto/css/style.css">
+<body>
+
+   <div class="Encabezado">
+
+    <div class="Logo_Empresa">
+        <img src="{% static 'images/logo-satret.png' %}" width="150" heigt="200" class="Logo"  halt="">
+        
+    </div>
+
+        <nav class="Bar_Naveg">
+            <a href="{% url 'pagina principal' %}" class="Ini">INICIO</a>
+            <a href="{% url 'register' %}">REGISTRARSE</a>
+            <a href="{% url 'login' %}">INICIAR SESIÓN</a>
+            
+       </nav>
+    
+
+   </div>
+        
+
+<!-- TITULO -->
+
+<main>
+
+    {% if messages %}
+    {% for message in messages %}
+     {% if message.tags == 'success' %}
+    <div class="alert alert-success">
+       {{ message }}
+    </div>
+    {% else %}
+    <div class="alert alert-danger">
+       {{ message }}
+    </div>
+    {% endif %}
+    {% endfor %}
+   {% endif %}
+
+
+
+    <div class="Contenedor">
+        <img src="{% static 'images/CasaCam.jfif' %}" alt="">
+
+        <p class="text2" >
+            Nuestros servicios nos permiten tener la seguridad de los clientes y el poder asegurar sus negocios, hogares y de mas...
+            <a  class="boton1" href="http://www.satret.com/">Ver más</a>
+        </p>
+        
+        
+
+
+        
+    </div>
+</main>
+
+<h1 class="title">PRODUCTOS</h1> 
+
+<div class="container" >
+    <div class="card">
+        <img src="{% static 'images/camara.png' %}">
+        <h4>Cámara</h4>
+        <p>Un CCTV o circuito cerrado de televisión es una instalación de equipos conectados que generan un circuito de imágenes que solo puede ser visto por un grupo determinado de personas, estas se personalizan para adaptarse a las necesidades de cada cliente bien sean orientadas a la seguridad, vigilancia o mejora de servicio.</p>
+        <a href="{% url 'catalogo' %}">Leer mas</a>
+    </div> <br>
+
+    <div class="container">
+        <div class="card">
+            <img src="{% static 'images/Sensores(1).png' %}">
+            <h4>Sensores</h4>
+            <p>Se utilizan con frecuencia para optimizar el consumo y la eficiencia energética de diversos sistemas como la ventilación, la iluminación o el aire acondicionado en el hogar o en la oficina, aunque también tiene aplicaciones en el ámbito de la seguridad.</p>
+            <a href="{% url 'catalogo' %}">Leer mas</a>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="card">
+            <img src="{% static 'images/Alarma(1).png' %}">
+            <h4>Alarma</h4>
+            <p>Estos dispositivos pueden ser sensores de movimiento, contactos magnéticos, detectores de humo, botón de pánico, entre otros, y éstos envían señales en forma periódica a nuestra Central de Monitoreo durante las 24 horas del día.</p>
+            <a href="{% url 'catalogo' %}">Leer mas</a>
+        </div>
+    </div>
+
+</div>
+
+
+<!--Imagenes-->
+
+<div class="Contenedor">
+    <p class="Quienessomos">¿QUIÉNES SOMOS?</p>
+    <div class="Texta1">
+        Somos una compañía especializada en tecnología de la información y comunicación. Operamos desde 2008, tiempo en el cual hemos demostrado nuestra capacidad y calidad en la implementación de todo tipo de proyectos. Nuestro valor surge en la experiencia y entrega demostrada por el personal en cada reto asumido. Eficiencia, cumplimento, responsabilidad y dedicación son las características que nos permiten satisfacer a nuestros clientes de forma única.    
+    </div>
+
+    <p class="Subtitles">Misión</p>
+    <div class="Texta1">
+        Brindar a nuestros clientes soluciones integrales en infraestructura de capa física, redes eléctricas, automatización y servicios integrales que le ayudarán a desarrollar sus actividades de forma óptima y eficiente, implementando nuevas e innovadoras infraestructuras tecnológicas que le permitirán ir a la vanguardia de las telecomunicaciones. Estamos comprometidos en dejar huella de calidad, responsabilidad social y excelencia en nuestros servicios.    
+    </div>
+
+    <p class="Subtitles">Visión</p>
+    <div class="Texta1">
+        En el 2022, posicionarnos a nivel nacional como compañía líder en servicios y soluciones tecnológicas y de infraestructura, gracias a nuestra excelencia operacional, escalabilidad, altos estándares de seguridad y competitividad.
+    </div>
+</div>
+
+
+</div class="textdow">
+<footer class="Footer1">
+    <img src="{% static 'images/logo-satret.png' %}" width="150" heigt="200" class="Logo"  halt="">
+    
+    <div class="socialicon">
+        <a href="" class="social-icon"></a>
+        <a href="" class="social-icon"></a>
+        <a href="" class="social-icon"></a>
+        <a href="" class="social-icon"></a>
+
+    </div>
+    <ul px="3px" class="FooterContainer">
+        <li class="menu-item">Legal</li>
+        <li class="menu-item">Cookies</li>
+        <li class="menu-item">Privacy</li>
+        <li class="menu-item">Shipping</li>
+        <li class="menu-item">Refounds</li>
+
+    </ul>
+
+    
+
+</footer>
+
+
+<footer class="cop">
+    <img src="{% static 'images/Logo.jpeg' %}" alt="" width="50" height="50" class="copyrigt">&copy;2022 - Project J.M.J</span>>
+</footer>
+</body>
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+</html>

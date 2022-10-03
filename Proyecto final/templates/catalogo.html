@@ -1,0 +1,230 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TiendaOnline</title>
+    <link rel="stylesheet" href="{% static 'css/catalogo.css'%}">
+</head>
+
+<body>
+
+
+    <div class="img-fondo">
+
+        <div class="velo-negro">
+
+           
+            <header class="header">
+                <a href="index.html">
+
+                    <img src="{% static 'images/logo-satret.png' %}" alt="logo" class="logo-img">
+                </a>
+
+
+            </header>
+            <!---FIN DEL HEADER-->
+
+           <nav class="Bar_Naveg2">
+            <a href="{% url 'pagina principal' %}" class="Ini">INICIO</a>
+            <a href="{% url 'Tienda' %}">CARRITO</a>
+            <a href="{% url 'catalogo' %}">CATALOGO</a>    
+           </nav>
+
+
+            <!--ESTE ES EL INICIO DEL CONTENIDO PRINCIPAL-->
+            <main class="contenedor">
+                <h1 class="nustros-productos">Nuestros Productos</h1>
+
+                <!--INICIO PRODUCTOS-->
+                <div class="productos">
+
+                    <!---INICIO PRODUCTO-->
+                    <div class="producto">
+
+
+                        <div class="producto-blanco">
+                            <img src="{% static 'images/cam5.jpg' %}" alt="Cámara TAPO C200 1080p Panoramica/Til">
+
+                        </div>
+
+                        <div class="producto-informacion">
+                            <p class="producto-nombre">Cámara TAPO 360°</p>
+                            <p class="producto-precio">$189.900</p>
+                        </div>
+
+
+
+                    </div>
+                    <!---INICIO PRODUCTO-->
+                    <div class="producto">
+
+
+                        <div class="producto-blanco">
+                            <img src="{% static 'images/cam4.jpg' %}" alt="Cámara de Seguridad Rotativa 360° VTA WiFi de Interior Vision Dia|Noche 1080P FHD con Seguimiento Automático y Audio Bidireccional">
+
+                        </div>
+
+                        <div class="producto-informacion">
+                            <p class="producto-nombre">Cámara Rotativa 360°</p>
+                            <p class="producto-precio">$149.900</p>
+                        </div>
+
+
+
+                    </div>
+
+                    <!---INICIO PRODUCTO-->
+                    <div class="producto">
+
+
+                        <div class="producto-blanco">
+                            <img src="{% static 'images/cam9.jpg' %}" alt="Cámara de seguridad 2.8mm con resolución de 2MP visión nocturna incluida blancal">
+
+                        </div>
+
+                        <div class="producto-informacion">
+                            <p class="producto-nombre">Cámara de seguridad 2.8mm</p>
+                            <p class="producto-precio">$27.880</p>
+                        </div>
+
+
+
+                    </div>
+
+                    <!---INICIO PRODUCTO-->
+                    <div class="producto">
+
+
+                        <div class="producto-blanco">
+                            <img src="{% static 'images/Alarma 1.png' %}" alt="Sistema de Alarma seguridad + gsm casa local empresa">
+
+                        </div>
+
+                        <div class="producto-informacion">
+                            <p class="producto-nombre">Alarma + gsm casa local</p>
+                            <p class="producto-precio">$287.880</p>
+                        </div>
+
+
+
+                    </div>
+
+                    <!---INICIO PRODUCTO-->
+                    <div class="producto">
+
+
+                        <div class="producto-blanco">
+                            <img src="{% static 'images/Alarma 2.jpg' %}" alt="Kit Alarma Para Casa Inalambrica Gsm Y Wifi (recomendada)">
+
+                        </div>
+
+                        <div class="producto-informacion">
+                            <p class="producto-nombre">Kit Alarma Inalambrica</p>
+                            <p class="producto-precio">$589.900</p>
+                        </div>
+
+
+
+                    </div>
+
+                    <!---INICIO PRODUCTO-->
+                    <div class="producto">
+
+
+                        <div class="producto-blanco">
+                            <img src="{% static 'images/Alarma 3.jpg' %}" alt="Alarma Casa Sirena Sensor Seguridad Hogar Inalambrica Kit">
+
+                        </div>
+
+                        <div class="producto-informacion">
+                            <p class="producto-nombre">Alarma de Hogar Kit</p>
+                            <p class="producto-precio">$200.000</p>
+                        </div>
+
+
+
+                    </div>
+
+                    <!---INICIO PRODUCTO-->
+                    <div class="producto">
+
+
+                        <div class="producto-blanco">
+                            <img src="{% static 'images/sensor 1.jpg' %}" alt="Sensor Detector De Humo Alarma + Batería 9v Conexión 110v">
+
+                        </div>
+
+                        <div class="producto-informacion">
+                            <p class="producto-nombre">Sensor Alarma De Humo</p>
+                            <p class="producto-precio">$24.700</p>
+                        </div>
+
+
+
+                    </div>
+
+                    <!---INICIO PRODUCTO-->
+                    <div class="producto">
+
+
+                        <div class="producto-blanco">
+                            <img src="{% static 'images/sensor 2.jpg' %}" alt="Sensor Detector De Humo + Bateria 9v Incluida Conexión 110v">
+
+                        </div>
+
+                        <div class="producto-informacion">
+                            <p class="producto-nombre">Sensor Detector De Humo</p>
+                            <p class="producto-precio">$23.900</p>
+                        </div>
+
+
+
+                    </div>
+
+                    <!---INICIO PRODUCTO-->
+                    <div class="producto">
+
+
+                        <div class="producto-blanco">
+                            <img src="{% static 'images/sensor 3.jpg' %}" alt="Sensor De Movimiento Anunciador Con Alarma Chismoso Original">
+
+                        </div>
+
+                        <div class="producto-informacion">
+                            <p class="producto-nombre">Sensor Chismoso Original</p>
+                            <p class="producto-precio">$4528</p>
+                        </div>
+
+
+
+                    </div>
+
+
+
+                </div>
+
+
+
+
+            </main>
+            <!--FIN DEL CONTENIDO PRINCIPAL-->
+
+
+
+        </div>
+
+
+    </div>
+
+
+    
+
+
+
+</body>
+
+</html>

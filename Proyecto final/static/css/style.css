@@ -1,0 +1,285 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+
+body
+{
+    background: url(/static/images/25550.jpg) 500% 800%;
+    width: 100%;
+    height: 100%;
+    font-family: 'Anton', sans-serif;
+    letter-spacing: 0.03em;
+    line-height: 1.6;
+}
+
+.titl {
+    text-align: center;
+    font-size: 40px;
+    color: #ffff;
+    margin-top: 100px;
+    font-weight: 100;
+    font-family: 'Anton', sans-serif;
+    font-size: 190%;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    height: 430;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    color: #CED4DA;
+    font-family: 'Playfair Display', serif;
+    /* background-color: #495057; */
+}
+
+.container .card {
+    width: 330px;
+    height: 430px;
+    border-radius: 8px;
+    box-shadow: 0 2px 2px rgba(0,0,0,0.2);
+    overflow: hidden;
+    margin: 20px;
+    text-align: center;
+    transition: all 0.25s;
+
+}
+
+.container .card:hover{
+    transform: translate(-15px);
+    box-shadow: 0 12px 16px rgba(0,0,0,0.2);
+    background-color: #6C757D;
+}
+
+.container .card img{
+    width: 330px;
+    height: 220px;
+}
+
+.container .card h4{
+    font-weight: 600;
+    color: #00d5ff;
+    font-family: 'Playfair Display', serif;
+}
+
+.container .card p{
+    padding: 0 1rem;
+    font-size: 16px;
+    font-weight: 300;
+    font-family: 'Playfair Display', serif;
+
+}
+
+.container .card a {
+    font-weight: 500;
+    text-decoration: none;
+    color: #3498db;
+    
+}
+
+
+
+.Encabezado{
+    background-color: #212529;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 63px;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    border-bottom: 2px solid #000000;
+    font-family: 'Playfair Display', serif;
+    
+}
+
+.Bar_Naveg {
+   
+padding: 50px 50px;
+
+}
+.Bar_Naveg a{
+    
+    text-decoration: none;
+    padding: 20px 30px;
+    color: #CED4DA;
+    text-transform: uppercase;
+    text-align: right;
+    font-size: 100%;
+    font-family: 'Anton', sans-serif;
+    border-radius: 20px;
+    text-shadow: 5px 5px 7px rgb(0, 0, 0);
+    font-family: 'Playfair Display', serif;
+    
+}
+.Bar_Naveg a:hover{
+    background-color: #495057;
+color: rgb(255, 255, 255);
+
+}
+
+main {
+    
+    padding: 300px 100px;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+.Contenedor {
+    margin: 100px;
+    display: flex;
+    background-color: #212529;
+    padding: 50px 50px;
+    font-size: 200%;
+    text-align: left;
+    justify-items: flex-end;
+    font-family: 'Anton', sans-serif;   
+    color: #DEE2E6;
+    text-shadow: 10px 10px 10px rgb(0, 0, 0);
+    font-family: 'Playfair Display', serif;
+}
+
+.Contemedor 
+{
+
+    color: #DEE2E6;
+    padding-left: 25px;
+    padding: 100px 20px;
+    text-align: left;
+    justify-items: flex-end;
+    font-size: 100%;
+    font-family: 'Anton', sans-serif;
+    text-shadow: 10px 10px 10px rgb(0, 0, 0);
+    font-family: 'Playfair Display', serif;
+
+}
+
+.text2{
+    padding: 50px 50px;
+    
+}
+
+
+
+
+.Quienessomos
+{
+    display: flex;
+    justify-content: left;
+    font-family: 'Anton', sans-serif; 
+    color: #00d5ff;
+    padding: 50px 10px;
+    font-size: 30px;
+    font-family: 'Playfair Display', serif;
+}
+
+.Subtitles 
+{
+
+    display: flex;
+    justify-content: left;
+    font-family: 'Anton', sans-serif;
+    color: #00d5ff;
+    padding: 25px 5px;
+    font-size: 20px;
+    font-family: 'Playfair Display', serif;
+
+}
+
+.Logo
+{
+
+    border-radius: 50%;
+
+}
+
+
+
+.Mod1 a{
+color: #CED4DA;
+font-size: 25px;
+text-decoration: none;
+font-family: 'Playfair Display', serif;
+
+}
+
+.Mod1 a:hover{
+  color: #00ff37;
+   
+}
+
+.Mod2 a{
+    color: #CED4DA;
+    font-size: 25px;
+    text-decoration: none;
+    font-family: 'Playfair Display', serif;
+}
+
+.Mod2 a:hover{
+    color: #00ff37;
+}
+
+.Mod3 a{
+    color: #CED4DA;
+    font-size: 25px;
+    text-decoration: none;
+    font-family: 'Playfair Display', serif;
+}
+
+.Mod3 a:hover{
+    color: #00ff37;
+}
+
+.Mod4 a{
+    color: #CED4DA;
+    font-size: 25px;
+    text-decoration: none;
+    font-family: 'Playfair Display', serif;
+}
+.copyrigt{
+    flex-direction: row-reverse;
+}
+
+footer
+{
+    
+    width: 100%;
+    background-color: #495057;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+.socialicon {
+    padding: 50px 50px;
+}
+
+.cop
+{
+  align-items: center;
+  justify-content: center;
+  justify-content: left;
+  padding: 5px;
+}
+
+
+.Contenedor a
+{
+ text-decoration: none;
+ display: flex;
+text-align: center;
+color: rgb(0, 213, 255);
+}
